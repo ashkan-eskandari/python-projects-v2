@@ -1,7 +1,8 @@
 import requests
+import os
 
-GEO_API_KEY = "3e7c686808e24f1f919e392b5020fe80"
-WEATHER_API_KEY = "e5c8feb7e8b44996d1d153669b1567fc"
+GEO_API_KEY = os.environ.get('GEO_API_KEY')
+WEATHER_API_KEY = os.environ.get('WEATHER_API_KEY')
 
 class Weather:
     def __init__(self):

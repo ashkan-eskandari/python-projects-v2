@@ -1,7 +1,7 @@
 import requests
+import os
 
-
-key = "c9e7b9cd10fb65d631c79b16c96d31f9"
+ELEVEN_LABS_KEY = os.environ.get('ELEVEN_LABS_KEY')
 
 
 def get_audio(text):
@@ -10,7 +10,7 @@ def get_audio(text):
     headers = {
         "Accept": "audio/mpeg",
         "Content-Type": "application/json",
-        "xi-api-key": key
+        "xi-api-key": ELEVEN_LABS_KEY
     }
 
     data = {
