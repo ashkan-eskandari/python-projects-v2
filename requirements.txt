@@ -1,9 +1,8 @@
-Flask==3.0.0
 Bootstrap_Flask==2.3.2
+elevenlabs==0.2.27
+Flask==3.0.0
 Flask_Bootstrap==3.3.7.1
 Flask_Bootstrap4==4.0.2
-iso3166==2.1.1
-requests==2.31.0
+Flask_Cors==4.0.0
+Requests==2.31.0
 Werkzeug==3.0.1
-Flask-Cors==4.0.0
-gunicorn==21.2.0
