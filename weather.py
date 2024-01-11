@@ -4,6 +4,7 @@ import os
 GEO_API_KEY = os.environ.get('GEO_API_KEY')
 WEATHER_API_KEY = os.environ.get('WEATHER_API_KEY')
 
+
 class Weather:
     def __init__(self):
         self.lat = ""
@@ -30,4 +31,3 @@ class Weather:
         city = data["name"]
         country = data["sys"]["country"]
         return temperature, condition, condition_icon, city, country
-
